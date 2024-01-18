@@ -14,7 +14,7 @@ class CustomerFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
+    public function definition()
     {
         $type = $this->faker->randomElement(['I', 'B']);
         $name = $type == 'I' ? $this->faker->name() : $this->faker->company();
